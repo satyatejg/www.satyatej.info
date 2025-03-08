@@ -22,17 +22,22 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
             margin-bottom: 20px;
         }
         header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+            width: 120px;   /* Passport-sized image */
+            height: 120px;  /* Passport-sized image */
+            border-radius: 0%; /* Make the image square */
+            margin-right: 20px; /* Space between image and text */
         }
         h1 {
-            margin: 10px 0;
+            margin: 0;
             color: #2c3e50;
+        }
+        p {
+            margin: 5px 0;
         }
         .contact-info p {
             margin: 5px 0;
@@ -66,12 +71,14 @@
         <!-- Header with Name and Profile Picture -->
         <header>
             <img src="satya-profile-pic.jpg" alt="Your Profile Picture">
-            <h1>Satyatej Gundavarapu</h1>
-            <p>Devops | AWS</p>
+            <div>
+                <h1>Satyatej Gundavarapu</h1>
+                <p>Devops | AWS</p>
+            </div>
         </header>
 
         <!-- Contact Information -->
-        <section class="contact-info">
+        <section class="contact-info section">
             <h2>Contact Information</h2>
             <p>Email: satyatej.g@gmail.com</p>
             <p>Phone: +918639971269</p>
