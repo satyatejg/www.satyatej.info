@@ -43,24 +43,22 @@
             border-radius: 0%; /* Square image */
         }
 
-        /* Name and job title on the left */
+        /* Name and job title on the right */
         header .text-container {
             position: absolute;
-            left: 160px; /* Offset to the right of the image */
+            right: 0;
             top: 50%;
             transform: translateY(-50%); /* Center the text vertically */
-            text-align: left;
-            margin-left: 20px; /* Adding some spacing from the left side */
+            text-align: right;
+            margin-right: 20px;
         }
 
         h1 {
             margin: 0;
             color: #2c3e50;
-            font-size: 3vw; /* Adjusting font size based on the screen width */
         }
         p {
             margin: 5px 0;
-            font-size: 1.5vw; /* Adjusting font size based on the screen width */
         }
 
         /* Section styles */
@@ -90,50 +88,32 @@
 
         /* Responsive styles */
         @media (max-width: 768px) {
-            /* Ensure header content is on the left */
+            /* Stack header content on mobile */
             header {
                 height: auto;
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
 
+            /* Adjust the image size for mobile devices */
             header img {
                 width: 120px;
                 height: 120px;
             }
 
-            /* Keep text on the left */
             header .text-container {
-                left: 140px; /* Adjust position if necessary */
-                text-align: left;
-            }
-
-            /* Font size adjustments for mid-sized screens */
-            h1 {
-                font-size: 4vw;
-            }
-            p {
-                font-size: 2vw;
+                text-align: center;
+                position: relative;
+                right: auto;
+                top: auto;
+                margin-right: 0;
             }
         }
 
         @media (max-width: 480px) {
-            /* Ensure image is not overlapping */
             header img {
                 width: 100px;
                 height: 100px;
-            }
-
-            header .text-container {
-                left: 120px; /* Adjust position */
-            }
-
-            /* Font size adjustments for smaller screens */
-            h1 {
-                font-size: 5vw;
-            }
-            p {
-                font-size: 3vw;
             }
         }
     </style>
